@@ -211,9 +211,11 @@ margin-top: 150px;
 }
 
 .service {
+    width: 1366px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 643px;
     position: relative;
     z-index: 1;
 
@@ -280,13 +282,175 @@ margin-top: 150px;
     height: 40px;
 }
 
-.formularz span {
-    background: #FF0000;
-    width: 50px;
-    height: 3px;
+.formularz {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formularz h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.formularz .container {
+    display: flex;
+    justify-content: center;
+}
+
+.formularz img {
+    width: 444px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 444px;
+    margin-left: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 15px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 1px 6px #FF00004D;;
-    margin-top: 75px;
+box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="text"] {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #FF00004D;
+    border: 1px solid #FF0000;
+}
+
+input[type="password"] {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+textarea {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+input::placeholder {
+    font: normal normal normal 16px/22px Nunito Sans;
+    letter-spacing: 0px;
+    color: #B2B2B2;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    color: #B2B2B2;
+}
+
+.checkbox span {
+    height: 22px;
+    flex-shrink: 0;
+    flex-basis: 22px;
+    border: 3px solid #B2B2B2;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox input:checked + span {
+    background-image: url("../Images/Icon Check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.formularz .checkbox {
+margin-bottom: 20px;
+}
+
+.formularz button {
+   width: 142px;
+    height: 40px;
+    align-self: flex-end;
+    background-color: white;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+
+
+}
+
+
+footer {
+    display: flex;
+    background: #28272C 0% 0% no-repeat padding-box;
+    flex-direction: column;
+    width: 1366px;
+    height: 233px;
+    color: green;
+
+}
+
+footer .bottommenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+footer .logobottom {
+    width: 1088px;
+}
+
+.logo3 {
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.logo3 span {
+    color: #FF0000;
+}
+
+.logo3::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 28px;
+    background-image: url("../Images/Logo Footer.svg");
+    position: absolute;
+    top: 6px;
+    left: 35px;
+    background-size: cover;
+}
+
+footer .kolumny {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .dwiekolumny {
+    display: flex;
+}
+
+footer .dwiekolumny ul {
+    display: flex;
+    flex-direction: column;
 }
 
 
