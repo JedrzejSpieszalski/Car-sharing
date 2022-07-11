@@ -65,6 +65,7 @@ header .tło {
     width: 1366px;
     height: 100%;
     background-image: url("../Images/Image.jpg");
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 0;
@@ -172,6 +173,7 @@ header .tło .glownynapis .glownynapiskontener p {
     z-index: 1;
     text-align: center;
     margin-bottom: 10px;
+    position: relative;
 }
 
 header .tło .glownynapis .glownynapiskontener .buttons {
@@ -184,6 +186,30 @@ header .tło .glownynapis .glownynapiskontener .buttons button {
     font-weight: bold;
 }
 
+body > header > div > div > div.arrow {
+    box-sizing: border-box;
+    z-index: 2;
+    width: 55px;
+    height: 55px;
+    background-color: #FF0000;
+    position: absolute;
+    bottom: -27.5px;
+
+    padding: 20px;
+display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+body > header > div > div > div.arrow > div {
+    position: absolute;
+    top: 16px;
+}
+
+
 .blog {
     display: flex;
     justify-content: center;
@@ -193,7 +219,30 @@ header .tło .glownynapis .glownynapiskontener .buttons button {
 
 }
 
-.blog h1 {
+.blog .blog_title {
+    display: flex;
+    justify-content: center;
+}
+
+.blog .blog_title span {
+
+    background: #FF0000;
+    width: 50px;
+    height: 3px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+
+
+}
+
+.blog .blog_title span:last-of-type {
+    margin-left: 10px;
+}
+
+
+.blog .blog_title h1 {
+
     color: black;
     text-transform: uppercase;
     text-align: center;
@@ -241,7 +290,30 @@ header .tło .glownynapis .glownynapiskontener .buttons button {
 }
 
 .service .container {
+display: flex;
 
+    align-items: center;
+}
+
+.service .container .service_title {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.service .service_title span {
+    background: #FF0000;
+    width: 50px;
+    height: 3px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-right: 15px;
+}
+
+.service .service_title span:last-of-type {
+    margin-left: 15px;
 }
 
 .service::before {
@@ -318,6 +390,26 @@ header .tło .glownynapis .glownynapiskontener .buttons button {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.formularz .formularz_title {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.formularz .formularz_title span {
+    background: #FF0000;
+    width: 50px;
+    height: 3px;
+    border-radius: 8px;
+    margin-top: 22px;
+    margin-right: 15px;
+}
+
+.formularz .formularz_title span:last-of-type {
+    margin-left: 15px;
+}
+
 
 .formularz h2 {
     margin-bottom: 20px;
